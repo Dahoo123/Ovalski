@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:text="Крестики: 0 | "
+            android:id="@+id/Score1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:text="Нолики: 0"
+            android:id="@+id/Score2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/But1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Button"></Button>
+
+            <Button
+                android:id="@+id/But2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Button"></Button>
+
+            <Button
+                android:id="@+id/But3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Button"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/But4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Button"></Button>
+
+            <Button
+                android:id="@+id/But5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Button"></Button>
+
+            <Button
+                android:id="@+id/But6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Button"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/But7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Button"></Button>
+
+            <Button
+                android:id="@+id/But8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Button"></Button>
+
+            <Button
+                android:id="@+id/But9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Button"></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:onClick="Start"
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+    </Button>
+</androidx.constraintlayout.widget.ConstraintLayout>
